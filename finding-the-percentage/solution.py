@@ -1,10 +1,10 @@
 if __name__ == '__main__':
-    n = int(input())
+    n = int(raw_input())
     student_marks = {}
-    for i in range(n):
-        name, *line = input().split()
-        scores = list(map(float, line))
+    for _ in range(n):
+        line = raw_input().split()
+        name, scores = line[0], line[1:]
+        scores = map(float, scores)
         student_marks[name] = scores
-    query_name = input()
+    query_name = raw_input()
 print('{:.2f}'.format(sum(student_marks[query_name])/(len(student_marks[query_name]))))
-
