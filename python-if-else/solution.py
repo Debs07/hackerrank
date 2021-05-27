@@ -17,17 +17,11 @@ If  is even and greater than , print Not Weird
 
 
 if __name__ == '__main__':
-    n = int(input().strip())
-    if n % 2 == 1:
-        print("Weird")
-        exit()
-
-    if n in range(2,6) or n > 20:
+    n = int(raw_input().strip())
+    if n % 2 == 0 and (n in range(2,6) or n > 20):
         print("Not Weird")
-        exit() 
-    
-    if n in range(6,21):
+    else:    
         print("Weird")
-        exit()
+
 
 
