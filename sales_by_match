@@ -16,7 +16,7 @@ def sockMerchant(n, ar):
     pair_socks = 0
     for x in counter.values():
         pair_socks = pair_socks + int(x / 2)
-    print(pair_socks)
+    
     return pair_socks
         
 if __name__ == '__main__':
